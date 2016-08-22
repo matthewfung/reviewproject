@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="contactsApp">
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="/javascripts/app.js"></script>
   </head>
-  <body>
+  <body ng-controller = 'ContactsController'>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <p>Welcome to the Two Mouse's Phone Book</p>
+    <table>
+    	<tr>
+    		<td style="padding-right: 30px; width: 100px;"><h3>Name</h3></td>
+    		<td style="padding-right: 30px; width: 100px;"><h3>Description</h3></td>
+    		<td style="padding-right: 30px; width: 200px;"><h3>Phone Number</h3></td>
+    	</tr>
+    	<tr ng-repeat="contact in contacts">
+    		<td style="padding-right: 30px; ">{{contact.name}}</td>
+    		<td style="padding-right: 30px; ">{{contact.description}}</td>
+    		<td style="padding-right: 30px; ">{{contact.phone}}</td>
+    	</tr>
+    </table>
   </body>
 </html>
