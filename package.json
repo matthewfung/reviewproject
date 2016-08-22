@@ -1,0 +1,22 @@
+{
+  "name": "reviewproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewfung/reviewproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewfung/reviewproject/issues"
+  },
+  "homepage": "https://github.com/matthewfung/reviewproject#readme",
+  "dependencies": {
+    "mongodb": "^2.2.7"
+  }
+}
